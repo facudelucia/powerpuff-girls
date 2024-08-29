@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/powerpuff-girls/static/css/main.31d6cfe0.css",
+    "main.js": "/powerpuff-girls/static/js/main.7ceaa761.js",
+    "index.html": "/powerpuff-girls/index.html",
+    "main.7ceaa761.js.map": "/powerpuff-girls/static/js/main.7ceaa761.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.7ceaa761.js"
+  ]
+}
