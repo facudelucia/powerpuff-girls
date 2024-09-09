@@ -2,10 +2,22 @@
 
 exports[`EpisodePage Component matches the snapshot 1`] = `
 <div
-  className="sc-dsLQwm eeEXfj"
+  className="sc-iKTcqh gXHfRt"
 >
-  <div>
-    Loading...
+  <div
+    className="sc-gnpbhQ krRGqB"
+    data-testid="episode-details"
+  >
+    <button
+      className="sc-la-DxNn bcarGq"
+      onClick={[Function]}
+    >
+      &lt; Go Back
+    </button>
+    <div
+      className="sc-dsLQwm hzXjGX"
+      data-testid="loading"
+    />
   </div>
 </div>
 `;

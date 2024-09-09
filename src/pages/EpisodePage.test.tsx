@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import EpisodePage from './EpisodePage';
 import { Provider } from 'react-redux';
@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer';
 import { store } from '../store';
 
 describe('EpisodePage Component', () => {
-  test('renders EpisodePage and shows loading state', () => {
+  test('renders EpisodePage and shows loading state', async() => {
     render(
       <Provider store={store}>
         <MemoryRouter>
@@ -15,7 +15,9 @@ describe('EpisodePage Component', () => {
       </Provider>
     );
 
-    expect(screen.getByText(/loading/i)).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByTestId('loading')).toBeInTheDocument();
+    });
   });
 
   test('matches the snapshot', () => {

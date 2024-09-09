@@ -2,10 +2,15 @@
 
 exports[`ShowPage Component matches the snapshot 1`] = `
 <div
-  className="sc-iKTcqh lfjulL"
+  className="sc-knesRu ilcbuR"
 >
-  <div>
-    Loading...
+  <div
+    className="sc-dnaUSb cfHNqg"
+  >
+    <div
+      className="sc-iCZwEW klQXbG"
+      data-testid="loading"
+    />
   </div>
 </div>
 `;
